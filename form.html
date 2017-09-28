@@ -27,15 +27,15 @@
         </div>
       </nav>
     </header>
-    <main class="page-review">
-      <section class="review-header">
+    <main class="page-main">
+      <section class="main-header">
         <img class="review-header__image" src="img/review-image.jpeg" width="320" height="106" alt="Седона">
         <h1 class="review-header__header">Оставьте свой отзыв</h1>
         <p class="review-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
       </section>
-      <section class="name">
-        <h2 class="name__header">Представьтесь:</h2>
-        <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="name-form">
+          <legend class="name-form__header">Представьтесь:</legend>
           <p class="name-form__item">
             <label class="name-form__name" for="name-form__name">Имя*:</label>
             <input id="name-form__name" type="text" name="name" placeholder="Петр">
@@ -48,11 +48,9 @@
             <label class="name-form__patronymic" for="name-form__patronymic">Отчество:</label>
             <input id="name-form__patronymic" type="text" name="patronymic" placeholder="Александрович">
           </p>
-        </form>
-      </section>
-      <section class="contact">
-        <h2 class="contact__header">Контактная информация:</h2>
-        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        </fieldset>
+        <fieldset class="contact-form">
+          <legend class="contact-form__header">Контактная информация:</legend>
           <p class="contact-form__item">
             <label class="contact-form__phone" for="contact-form__phone">Контактный телефон*:</label>
             <input id="contact-form__phone" type="text" name="phone" placeholder="Введите телефон">
@@ -67,11 +65,9 @@
               <span class="visually-hidden">Почта</span>
             </button>
           </p>
-        </form>
-      </section>
-      <section class="impression">
-        <h2 class="impression__header">Ваше общее впечатление:</h2>
-        <form class="impression-form" action="https://echo.htmlacademy.ru" method="get">
+        </fieldset>
+        <fieldset class="impression">
+          <legend class="impression__header">Ваше общее впечатление:</legend>
           <ul class="impression-select">
             <li class="impression-select__item">
               <input id="impression-select__positive" type="radio" name="impression" value="positive" checked> 
@@ -86,11 +82,9 @@
               <label class="impression-select__difficult" for="impression-select__difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
-        </form>
-      </section>
-      <section class="sight">
-        <h2 class="sight__header">Посещенные достопримечательности:</h2>
-        <form class="sight-form" action="https://echo.htmlacademy.ru" method="get">
+        </fieldset>
+        <fieldset class="sight">
+          <legend class="sight__header">Посещенные достопримечательности:</legend>
           <ul class="sight-select">
             <li class="sight-select__item">
               <input id="sight-select__bridge" type="checkbox" name="bridge" checked>
@@ -109,15 +103,13 @@
               <label class="sight-select__cliffs" for="sight-select__cliffs">Красные скалы</label>
             </li>
           </ul>
-        </form>
-      </section>
-      <section class="emotions">
-        <h2 class="emotions__header">Опишите свои эмоции:</h2>
-        <form class="emotions__form" action="https://echo.htmlacademy.ru" method="post">
+        </fieldset>
+        <fieldset class="emotions">
+          <legend class="emotions__header">Опишите свои эмоции:</legend>
           <textarea class="emotions__item" name="text">Опишите подробно все свои восторги</textarea>
-        </form>
+        </fieldset>
         <button class="button" type="submit">Отправить отзыв</button>
-      </section>
+      </form>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#Visitsedona</p>
