@@ -67,15 +67,15 @@
           <ul class="impression__select">
             <li class="impression__item">
               <input class="visually-hidden" id="impression__positive" type="radio" name="impression" value="positive" checked> 
-              <label class="impression__positive" for="impression__positive">Скорее положительное</label>
+              <label class="impression__label" for="impression__positive">Скорее положительное</label>
             </li>
             <li class="impression__item">
               <input class="visually-hidden" id="impression__negative" type="radio" name="impression" value="negative"> 
-              <label class="impression__negative" for="impression__negative">Скорее отрицательное</label>
+              <label class="impression__label" for="impression__negative">Скорее отрицательное</label>
             </li>
             <li class="impression__item">
               <input class="visually-hidden" id="impression__difficult" type="radio" name="impression" value="difficult"> 
-              <label class="impression__difficult" for="impression__difficult">Затрудняюсь ответить</label>
+              <label class="impression__label" for="impression__difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
@@ -84,27 +84,39 @@
           <ul class="sight__select">
             <li class="sight__item">
               <input class="visually-hidden" id="sight__bridge" type="checkbox" name="bridge" checked>
-              <label class="sight__bridge" for="sight__bridge">Мост дьявола</label>  
+              <label class="sight__label" for="sight__bridge">Мост дьявола</label>  
             </li>
             <li class="sight__item">
               <input class="visually-hidden" id="sight__park" type="checkbox" name="park" checked>
-              <label class="sight__park" for="sight__park">Сайд парк</label>
+              <label class="sight__label" for="sight__park">Сайд парк</label>
             </li>
             <li class="sightt__item">
               <input class="visually-hidden" id="sight__mountain" type="checkbox" name="mountain">
-              <label class="sight__mountain" for="sight__mountain">Гора-Колокол</label>
+              <label class="sight__label" for="sight__mountain">Гора-Колокол</label>
             </li>
             <li class="sight-select__item">
               <input class="visually-hidden" id="sight__cliffs" type="checkbox" name="cliffs" checked>
-              <label class="sight__cliffs" for="sight__cliffs">Красные скалы</label>
+              <label class="sight__label" for="sight__cliffs">Красные скалы</label>
             </li>
           </ul>
+        </fieldset>
+        <fieldset class="validation">
+          <div class="validation-item">
+            <h2 class="validation-item__header">Что-то пошло не так!</h2>
+            <p class="validation-item__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="validation-item_button button" type="button">Ок</button>
+          </div>
+          <div class="validation-item">
+            <h2 class="validation-item__header">Ваш отзыв отправлен!</h2>
+            <p class="validation-item__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
+            <button class="validation-item_button button" type="button">Закрыть окно</button>
+          </div>
         </fieldset>
         <fieldset class="emotions">
           <legend class="form__header">Опишите свои эмоции:</legend>
           <textarea class="emotions__item" name="text">Опишите подробно все свои восторги</textarea>
         </fieldset>
-        <button class="form__button" type="submit">Отправить отзыв</button>
+        <button class="form__button button" type="submit">Отправить отзыв</button>
       </form>
     </main>
     <footer class="page-footer">
