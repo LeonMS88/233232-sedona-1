@@ -9,7 +9,7 @@
     <header class="page-header">
       <a href="index.html">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="120" height="83" alt="Седона">
-      </a>  
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -33,7 +33,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="main-header main-header__bg">
+      <section class="main-header main-header--bg">
         <img class="main-header__image" src="img/text-sedona.svg" width="320" height="160" alt="Седона">
         <h1 class="main-header__header">Оставьте свой отзыв</h1>
         <p class="main-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
@@ -69,15 +69,15 @@
           <legend class="form__header">Ваше общее впечатление:</legend>
           <ul class="impression__select">
             <li class="impression__item">
-              <input class="visually-hidden" id="impression__positive" type="radio" name="impression" value="positive" checked> 
+              <input class="visually-hidden" id="impression__positive" type="radio" name="impression" value="positive" checked>
               <label class="impression__label" for="impression__positive">Скорее положительное</label>
             </li>
             <li class="impression__item">
-              <input class="visually-hidden" id="impression__negative" type="radio" name="impression" value="negative"> 
+              <input class="visually-hidden" id="impression__negative" type="radio" name="impression" value="negative">
               <label class="impression__label" for="impression__negative">Скорее отрицательное</label>
             </li>
             <li class="impression__item">
-              <input class="visually-hidden" id="impression__difficult" type="radio" name="impression" value="difficult"> 
+              <input class="visually-hidden" id="impression__difficult" type="radio" name="impression" value="difficult">
               <label class="impression__label" for="impression__difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -87,7 +87,7 @@
           <ul class="sight__select">
             <li class="sight__item">
               <input class="visually-hidden" id="sight__bridge" type="checkbox" name="bridge" checked>
-              <label class="sight__label" for="sight__bridge">Мост дьявола</label>  
+              <label class="sight__label" for="sight__bridge">Мост дьявола</label>
             </li>
             <li class="sight__item">
               <input class="visually-hidden" id="sight__park" type="checkbox" name="park" checked>
@@ -103,7 +103,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="emotions">
+        <fieldset class="form__section emotions">
           <legend class="form__header">Опишите свои эмоции:</legend>
           <textarea class="emotions__item" name="text">Опишите подробно все свои восторги</textarea>
         </fieldset>
@@ -124,7 +124,7 @@
             <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#81b3d2" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a>
           </li>
         </ul>
-      </div>  
+      </div>
       <div class="copyright">
         <b class="copyright__text">Разработано</b>
         <a class="button  copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
@@ -133,12 +133,12 @@
     <div class="validation-item">
       <h2 class="validation-item__header">Что-то пошло не так!</h2>
       <p class="validation-item__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="validation-item_button button" type="button">Ок</button>
+      <button class="validation-item__button button--volume button" type="button">Ок</button>
     </div>
     <div class="validation-item">
       <h2 class="validation-item__header">Ваш отзыв отправлен!</h2>
       <p class="validation-item__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
-      <button class="validation-item_button button" type="button">Закрыть окно</button>
+      <button class="validation-item__button button--volume button" type="button">Закрыть окно</button>
     </div>
   </body>
 </html>
