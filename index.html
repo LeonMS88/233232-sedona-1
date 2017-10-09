@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="120" height="83" alt="Седона">
+      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="120" height="83" alt="Седона">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list  site-list">
             <li class="site-list__item">
@@ -29,7 +32,7 @@
     </header>
     <main class="page-main">
       <section class="main-header">
-        <img class="main-header__image" src="img/main-image.jpeg" width="320" height="389" alt="Седона">
+        <img class="main-header__image" src="img/text-sedona-index.svg" width="320" height="389" alt="Седона">
         <h1 class="main-header__header">Седона - Небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="main-header__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
@@ -37,16 +40,16 @@
         <h2 class="advantages__header">Настоящий городок</h2>
         <p class="advantages__item">-№1-</p>
         <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-        <img class="advantages__img" src="img/advantages-image.jpeg" width="320" height="260" alt="Город">
+        <img class="advantages__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Город">
       </section>
       <section class="recommendations">
-        <svg class="recommendations__image" width="39" height="37"></svg>
+        <img class="recommendations__image" src="img/icon-house.svg" width="39" height="37" alt="Дом">
         <h2 class="recommendations__header">Жилье</h2>
         <p class="recommendations__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        <svg class="recommendations__image" width="39" height="37"></svg>
+        <img class="recommendations__image" src="img/icon-gift.svg" width="32" height="38" alt="Сувениры">
         <h2 class="recommendations__header">Сувениры</h2>
         <p class="recommendations__description">Не только китайского, но и местного производства!</p>
-        <svg class="recommendations__image" width="39" height="37"></svg>
+        <img class="recommendations__image" src="img/icon-burger.svg" width="40" height="35" alt="Еда">
         <h2 class="recommendations__header">Еда</h2>
         <p class="recommendations__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </section>
@@ -54,7 +57,7 @@
         <h2 class="advantages__header">Там есть мост дьявола</h2>
         <p class="advantages__item">-№2-</p>
         <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        <img class="advantages__img" src="img/advantages-image.jpeg" width="320" height="260" alt="Горы">
+        <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Горы">
       </section>
       <section class="advantages-list">
         <div class="advantages-list__item">
@@ -78,26 +81,26 @@
         <p class="suggestions__description">Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
         <a class="suggestions__search button" href="#">Найти гостиницу</a>
       </section>
-      <img class="map" src="img/map.jpeg" width="320" height="350" alt="Карта">
+      <img class="map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#Visitsedona</p>
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link  social__link--vkontakte" href="https://vk.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#81b3d2" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#81b3d2" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#81b3d2" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a>
           </li>
         </ul>
-      </div>  
+      </div>
       <div class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button  copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button  copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
   </body>

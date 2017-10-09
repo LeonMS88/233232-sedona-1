@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="120" height="83" alt="Седона">
-      </a>  
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="120" height="83" alt="Седона">
+      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list  site-list">
             <li class="site-list__item">
@@ -30,8 +33,8 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="main-header">
-        <img class="main-header__image" src="img/review-image.jpeg" width="320" height="106" alt="Седона">
+      <section class="main-header main-header--bg">
+        <img class="main-header__image" src="img/text-sedona.svg" width="320" height="160" alt="Седона">
         <h1 class="main-header__header">Оставьте свой отзыв</h1>
         <p class="main-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
       </section>
@@ -66,15 +69,15 @@
           <legend class="form__header">Ваше общее впечатление:</legend>
           <ul class="impression__select">
             <li class="impression__item">
-              <input class="visually-hidden" id="impression__positive" type="radio" name="impression" value="positive" checked> 
+              <input class="visually-hidden" id="impression__positive" type="radio" name="impression" value="positive" checked>
               <label class="impression__label" for="impression__positive">Скорее положительное</label>
             </li>
             <li class="impression__item">
-              <input class="visually-hidden" id="impression__negative" type="radio" name="impression" value="negative"> 
+              <input class="visually-hidden" id="impression__negative" type="radio" name="impression" value="negative">
               <label class="impression__label" for="impression__negative">Скорее отрицательное</label>
             </li>
             <li class="impression__item">
-              <input class="visually-hidden" id="impression__difficult" type="radio" name="impression" value="difficult"> 
+              <input class="visually-hidden" id="impression__difficult" type="radio" name="impression" value="difficult">
               <label class="impression__label" for="impression__difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -84,7 +87,7 @@
           <ul class="sight__select">
             <li class="sight__item">
               <input class="visually-hidden" id="sight__bridge" type="checkbox" name="bridge" checked>
-              <label class="sight__label" for="sight__bridge">Мост дьявола</label>  
+              <label class="sight__label" for="sight__bridge">Мост дьявола</label>
             </li>
             <li class="sight__item">
               <input class="visually-hidden" id="sight__park" type="checkbox" name="park" checked>
@@ -100,7 +103,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="emotions">
+        <fieldset class="form__section emotions">
           <legend class="form__header">Опишите свои эмоции:</legend>
           <textarea class="emotions__item" name="text">Опишите подробно все свои восторги</textarea>
         </fieldset>
@@ -112,30 +115,30 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link  social__link--vkontakte" href="https://vk.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#81b3d2" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#81b3d2" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#81b3d2" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a>
           </li>
         </ul>
-      </div>  
+      </div>
       <div class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button  copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button  copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
     <div class="validation-item">
       <h2 class="validation-item__header">Что-то пошло не так!</h2>
       <p class="validation-item__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="validation-item_button button" type="button">Ок</button>
+      <button class="validation-item__button button--volume button" type="button">Ок</button>
     </div>
     <div class="validation-item">
       <h2 class="validation-item__header">Ваш отзыв отправлен!</h2>
       <p class="validation-item__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
-      <button class="validation-item_button button" type="button">Закрыть окно</button>
+      <button class="validation-item__button button--volume button" type="button">Закрыть окно</button>
     </div>
   </body>
 </html>
