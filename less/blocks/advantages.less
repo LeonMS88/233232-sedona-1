@@ -1,8 +1,19 @@
 .advantages {
-  width: 320px;
-  min-height: 471px;
-
   background-color: #81b3d2;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.advantages-list {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .advantages__header {
@@ -23,4 +34,8 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+}
+
+.advantages__wrapper {
+
 }

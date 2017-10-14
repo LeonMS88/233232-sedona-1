@@ -1,6 +1,9 @@
 .page-footer {
-  width: 320px;
-  min-height: 233px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .page-footer__hashtag {
