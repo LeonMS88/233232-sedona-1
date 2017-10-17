@@ -2,18 +2,32 @@
   @media (min-width: 768px) {
     width: 768px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   @media (min-width: 1200px) {
     width: 1200px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
 .form__section {
   border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .form__header {

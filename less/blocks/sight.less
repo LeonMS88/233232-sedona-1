@@ -2,9 +2,20 @@
   list-style: none;
 
   @media (min-width: 768px) {
-    width: 768px;
+    width: 460px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
 }
 
@@ -15,5 +26,5 @@
 }
 
 .sight__item {
-
+  width: 190px;
 }
