@@ -17,6 +17,12 @@
     flex-wrap: nowrap;
     justify-content: space-around;
   }
+
+  &:nth-child(2) {
+      @media (min-width: 768px) {
+      order: -3;
+    }
+  }
 }
 
 .sight__label {
@@ -27,4 +33,34 @@
 
 .sight__item {
   width: 190px;
+}
+
+.sight__item--bridge {
+  @media (min-width: 768px) {
+    order: -3;
+  }
+
+  @media (min-width: 1200px) {
+    order: -3;
+  }
+}
+
+.sight__item--park {
+  @media (min-width: 768px) {
+    order: -1;
+  }
+
+  @media (min-width: 1200px) {
+    order: -1;
+  }
+}
+
+.sight__item--mountain {
+  @media (min-width: 768px) {
+    order: -2;
+  }
+
+  @media (min-width: 1200px) {
+    order: -2;
+  }
 }
