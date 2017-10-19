@@ -1,6 +1,17 @@
-.photo-list__item {
+.photo-list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.photo-list__spaces {
   @media (min-width: 768px) {
     width: 648px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
