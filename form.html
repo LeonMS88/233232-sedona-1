@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -56,14 +57,16 @@
         </fieldset>
         <fieldset class="form__section contact-form">
           <legend class="form__header">Контактная информация:</legend>
-          <p class="contact-form__item">
-            <label class="contact-form__label" for="contact-form__phone">Контактный телефон*:</label>
-            <input class="contact-form__text" id="contact-form__phone" type="text" name="phone" placeholder="Введите телефон">
-          </p>
-          <p class="contact-form__item">
-            <label class="contact-form__label" for="contact-form__mail">Электронная почта*:</label>
-            <input class="contact-form__text" id="contact-form__mail" type="text" name="mail" placeholder="Введите e-mail">
-          </p>
+          <div class="contact-form__wrapper">
+            <p class="contact-form__item">
+              <label class="contact-form__label" for="contact-form__phone">Контактный телефон*:</label>
+              <input class="contact-form__text" id="contact-form__phone" type="text" name="phone" placeholder="Введите телефон">
+            </p>
+            <p class="contact-form__item">
+              <label class="contact-form__label" for="contact-form__mail">Электронная почта*:</label>
+              <input class="contact-form__text" id="contact-form__mail" type="text" name="mail" placeholder="Введите e-mail">
+            </p>
+          </div>
         </fieldset>
         <fieldset class="form__section impression">
           <legend class="form__header">Ваше общее впечатление:</legend>
@@ -85,19 +88,19 @@
         <fieldset class="form__section sight">
           <legend class="form__header">Посещенные достопримечательности:</legend>
           <ul class="sight__select">
-            <li class="sight__item">
+            <li class="sight__item sight__item--bridge ">
               <input class="visually-hidden" id="sight__bridge" type="checkbox" name="bridge" checked>
               <label class="sight__label" for="sight__bridge">Мост дьявола</label>
             </li>
-            <li class="sight__item">
+            <li class="sight__item sight__item--park">
               <input class="visually-hidden" id="sight__park" type="checkbox" name="park" checked>
               <label class="sight__label" for="sight__park">Сайд парк</label>
             </li>
-            <li class="sightt__item">
+            <li class="sight__item sight__item--mountain">
               <input class="visually-hidden" id="sight__mountain" type="checkbox" name="mountain">
               <label class="sight__label" for="sight__mountain">Гора-Колокол</label>
             </li>
-            <li class="sight-select__item">
+            <li class="sight-select__item sight__item--cliffs">
               <input class="visually-hidden" id="sight__cliffs" type="checkbox" name="cliffs" checked>
               <label class="sight__label" for="sight__cliffs">Красные скалы</label>
             </li>
@@ -130,12 +133,12 @@
         <a class="button  copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
-    <div class="validation-item">
+    <div class="validation-item validation-item--wrong">
       <h2 class="validation-item__header">Что-то пошло не так!</h2>
       <p class="validation-item__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="validation-item__button button--volume button" type="button">Ок</button>
     </div>
-    <div class="validation-item">
+    <div class="validation-item validation-item--comment">
       <h2 class="validation-item__header">Ваш отзыв отправлен!</h2>
       <p class="validation-item__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
       <button class="validation-item__button button--volume button" type="button">Закрыть окно</button>

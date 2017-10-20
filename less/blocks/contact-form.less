@@ -1,3 +1,13 @@
+.contact-form {
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
 .contact-form__label {
   color: #333333;
   font-weight: 400;
@@ -10,4 +20,23 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.contact-form__item {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.contact-form__wrapper {
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
