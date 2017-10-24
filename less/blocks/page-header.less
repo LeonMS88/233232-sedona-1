@@ -2,10 +2,28 @@
   display: flex;
   flex-direction: column;
   min-height: 56px;
+  position: relative;
+  margin-bottom: 56px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .page-header__logo-image {
-    position: absolute;
-    right: 145px;
-    top: 223px;
+  position: absolute;
+  left: 50%;
+  margin-left: -18%;
+  top: 223px;
+
+  @media (min-width: 768px) {
+    top: 0;
+    margin-left: -8%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 190px;
+    height: 84px;
+    margin-left: -8%;
+  }
 }
